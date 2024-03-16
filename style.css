@@ -92,10 +92,12 @@ section h1 {
     background: black;
 }
 
-.github:hover {
+.github:hover, .inst:hover, .tg:hover, .mail:hover, .html:hover, .css:Hover, .js:hover {
     transform: scale(1.05);
     cursor: pointer;
 }
+
+
 
 footer {
     width: 100%;
