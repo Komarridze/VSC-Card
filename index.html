@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f77600b8df.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="header_left">
-            <h1>Ім'я Прізвище</h1>
+            <h1>Жданов Олександр</h1>
             <div class="bio">
-                <p>Тут напиши що-небудь про себе :)</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>This Google Font does not accept Cyrillic &nbsp; :)</p>
             </div>
         </div>
         <div class="header_right">
-            <div class="header_btn">
+            <div class="header_btn" id="headerBtn">
                 <i class="fa-solid fa-chevron-down"></i>
             </div>
         </div>
     </header>
-    <main>
+    <main id="maincon">
         <section class="skills">
             <h1>Навички</h1>
             <div class="section_row">
@@ -40,7 +42,9 @@
             <h1>Проєкти</h1>
             <div class="section_row">
                 <div class="section_item github">
-                    <img src="github_logo.png" alt="">
+                    <a href="https://github.com/Komarridze">
+                        <img src="github_logo.png" alt="">
+                    </a>
                 </div>
             </div>
         </section>
@@ -48,13 +52,14 @@
             <h1>Контакти</h1>
             <div class="section_row">
                 <div class="section_item">
-                    <img src="Instagram_icon.png.webp" alt="">
+                    <a href="https://www.instagram.com/_tretitz"><img src="Instagram_icon.png.webp" alt="" ></a>
+                    
                 </div>
                 <div class="section_item">
-                    <img src="tg_logo.svg" alt="">
+                    <a href="https://t.me/tretitz"><img src="tg_logo.svg" alt=""></a>
                 </div>
                 <div class="section_item">
-                    <img src="email_logo.png" alt="">
+                    <a href="mailto:aychihuahua7@gmail.com"><img src="email_logo.png" alt=""></a>
                 </div>
             </div>
         </section>
@@ -65,4 +70,11 @@
         </div>
     </footer>
 </body>
+
+<script>
+    headerBtn.onclick = function scrollToBlock() {
+        document.querySelector('#maincon').scrollIntoView({behavior:"smooth"})
+    }
+
+</script>
 </html>
